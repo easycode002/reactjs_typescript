@@ -91,7 +91,7 @@ npm run dev
 ```
 
 
-## > [!NOTE]
+> [!NOTE]
 Everyone, If u want to clone this project guy must be run this command
 ```
 npm install
