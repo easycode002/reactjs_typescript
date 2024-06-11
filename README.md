@@ -89,3 +89,11 @@ export default function App() {
 ```
 npm run dev
 ```
+
+
+## > [!NOTE]
+Everyone, If u want to clone this project guy must be run this command
+```
+npm install
+```
+This command for install node_module in your project after clone. `node_module` in not complete push to github, It is so big size.
