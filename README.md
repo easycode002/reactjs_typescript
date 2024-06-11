@@ -97,3 +97,9 @@ Everyone, If u want to clone this project guy must be run this command
 npm install
 ```
 This command for install node_module in your project after clone. `node_module` in not complete push to github, It is so big size.
+
+# Some dependencies need to use in this project
+=> react-router-dom
+```
+npm i react-router-dom
+```
