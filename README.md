@@ -103,3 +103,7 @@ This command for install node_module in your project after clone. `node_module` 
 ```
 npm i react-router-dom
 ```
+
+```
+npm install react-icons
+```
