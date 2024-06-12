@@ -21,7 +21,7 @@ export const Responsiveness:React.FC = () => {
 
       <button className="block text-2xl md:hidden">
         <FiMenu />
-      </button>
+      </button>lock text-2xl md
     </nav>
   );
 };

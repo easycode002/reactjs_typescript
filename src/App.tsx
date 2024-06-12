@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/organisms/Layouts/Layout";
-import TailwindCss from "./pages/Tailwindcss/HomePage";
+import TailwindCss from "./pages/Tailwindcss/TailwindCSS";
 
 const App = () => {
     return (
