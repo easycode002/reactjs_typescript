@@ -15,10 +15,10 @@ export default {
       },
     },
     screens: {
-      sm: '350px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
+      sm: '350px',    // Smartphones
+      md: '768px',    // Tablets (iPads)
+      lg: '1024px',   // Small desktops / large tablets
+      xl: '1280px',   // Large desktops
     },
   },
   plugins: [],
