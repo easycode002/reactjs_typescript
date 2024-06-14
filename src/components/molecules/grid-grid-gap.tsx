@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { TbArrowBigRightLineFilled } from "react-icons/tb";
 const Grid: React.FC = () => {
     return (
         <div>
@@ -50,7 +51,7 @@ const BasicBlogLayout = () => (
                     <div className="text-right">
                         <a href="#" className="text-blue-500 group-hover:text-blue-700 transition-all duration-300 flex items-center">
                             <span>Read More</span>
-                            <FaArrowRight 
+                            <TbArrowBigRightLineFilled 
                                 className="group-hover:ml-2 transition-all duration-300"
                             />
                         </a>
