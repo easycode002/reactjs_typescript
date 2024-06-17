@@ -12,6 +12,7 @@ interface ButtonProps {
     icon?: React.ReactNode;
     iconPosition?:'left' | 'right';
     variant?: 'primary' | 'secondary' | 'success' | 'danger' | 'default' | 'myButton';
+    size?: 'small' | 'medium' | 'large';  // Added size prop
 }
 
 // define button component
@@ -24,7 +25,8 @@ const Button: React.FC<ButtonProps> = ({
     loading = false,
     icon,
     iconPosition = 'left',
-    variant = 'primary'
+    variant = 'primary',
+    size = 'medium',
 }) => {
     // base and condition class
     const baseClasses = 'flex items-center justify-center px-6 py-2 font-medium';
@@ -38,12 +40,19 @@ const Button: React.FC<ButtonProps> = ({
         myButton: 'px-6 py-3 bg-[#920e0e7] rounded-full text-white font-bold duration hover:bg-[#933531]',
     };
 
+    // define class size for button
+    const sizeClasses = {
+        small: 'px-2 py-1 text-sm',
+        medium: 'px-3 py-2 text-base',
+        large: 'px-4 py-3 text-lg',
+    };
+
     // return button element
     return (
         <button
             type={type}
             onClick={onClick}
-            className={`${baseClasses} ${variantClasses[variant]} ${className} ${disables || loading ? disablesClasses : ''}`}
+            className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className} ${disables || loading ? disablesClasses : ''}`}
         >
             {loading && <span className="loader mr-2"></span>}
             {icon && iconPosition === 'left' && <span className="mr-2">{icon}</span>}

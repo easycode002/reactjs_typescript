@@ -8,6 +8,7 @@ interface InputProps {
     type?: string;
     value?: string;
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    size?: 'small' | 'medium' | 'large';  // Added size prop
 }
 
 const Input: React.FC<InputProps> = ({
@@ -18,9 +19,16 @@ const Input: React.FC<InputProps> = ({
     type = 'text',
     value,
     onChange,
+    size = 'medium',
 }) => {
+
+    const sizeClasses = {
+        small: 'px-2 py-1 text-sm',
+        medium: 'px-3 py-2 text-base',
+        large: 'px-4 py-3 text-lg',
+    };
     return (
-        <div className={`flex items-center border-gray-900 border-2 rounded-full px-2 py-2 group ${className}`}>
+        <div className={`flex items-center border-gray-900 border-2 rounded-full px-2 py-2 group ${sizeClasses[size]} ${className}`}>
             {icon && iconPosition === 'left' && <span className="mr-4 duration-100 group-hover:scale-110">{icon}</span>}
             <input
                 type={type}

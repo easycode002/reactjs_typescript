@@ -22,6 +22,7 @@ const Button_Component: React.FC = () => {
                 // icon={<span>🔔</span>}
                 icon={<SlCallOut />}
                 iconPosition="right"
+                size="medium"
             >
                 Click Me
             </Button>

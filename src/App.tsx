@@ -3,7 +3,6 @@ import Layout from "./components/organisms/Layouts/Layout";
 import TailwindCss from "./pages/Tailwindcss/TailwindCSS";
 import Grid_Tailwind from "./pages/Tailwindcss/Tailwind-css-grid";
 import Button_Component from "./pages/test-component/button-component";
-import Input_Component from "./pages/test-component/input-component";
 
 const App = () => {
     return (
@@ -23,7 +22,7 @@ const App = () => {
                     <Route>
                         <Route path="/tailwind-css" element={<TailwindCss/>}/>
                         <Route path="/tailwindcss-grid" element={<Grid_Tailwind/>}/>
-                        <Route path="/test-component" element={<Input_Component/>}/>
+                        <Route path="/test-component" element={<Button_Component/>}/>
                         {/* <Route path="/hover" element={<Hover/>}/> */}
                     </Route>
                 </Routes>

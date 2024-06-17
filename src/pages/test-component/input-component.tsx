@@ -17,6 +17,7 @@ const Input_Component:React.FC = () =>{
                 value={inputValue}
                 onChange={handleChange}
                 iconPosition="right"
+                size="large"
             />
             <h1 className="ml-10">{"==> "+inputValue}</h1>
         </div>
